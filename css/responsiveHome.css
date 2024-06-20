@@ -1,8 +1,8 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /* CSS rules for screens 768px and above */
-    .welcomePage .content{width:100%;}
-       
+    .welcomePage .contents{width:100%;}
+    .welcomePage h1{font-size: 22px;}
     .welcomePage .welcomeImg img{width:100%;}
     
-    
+    .facilities .cards{width:100%}
   }
