@@ -15,7 +15,7 @@ body {
 .container {
     border-radius: 8px;
     overflow: hidden;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -55,9 +55,14 @@ nav.top .info {
 
 .pageLinks {
     height: 60px;
+    width: 100%;
     font-family: "Poppins", Sans-serif;
     font-size: 16px;
     font-weight: 400;
+    position: ;
+    background-color: white;
+    top: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .pageLinks,
@@ -229,9 +234,156 @@ nav.top .info {
 
 
 /*forth page*/
-.programs {width:100%;display: flex;flex-direction: column;align-items: center;justify-content:space-around;background-color:  red;padding:100px 20px}
-.programs .heading{text-align: center;width:100%}
-.programs .program-items{height:100vh;display:flex}
-.programs .card{width:30%;height:500px;background-color: yellow; border-radius: 10px;display:flex;flex-direction: column;align-items: center;}
-.programs .card .card-img{height:50%;width:90%;border:1px solid black;border-radius: 8px;overflow: hidden;}
-.programs .card .program-info{height:50%;width:90%;border:1px solid black}
+.programs {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 20px
+}
+
+.programs .heading {
+    text-align: center;
+    width: 100%
+}
+
+.programs .program-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.programs .program-items {
+    height: 500px;
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.program-info h2 {
+    padding: 20px 0px;
+    font-weight: 500;
+}
+
+.programs .card {
+    width: 90%;
+    height: 500px;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.programs .card .card-img {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.programs .card .program-info {
+    height: 50%;
+    width: 90%;
+}
+
+.programs .program-level {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font: Poppins, sans-serif;
+    align-items: center;
+    padding: 10px 0px
+}
+
+.programs .program-level a {
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid rgb(14, 71, 94);
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+
+
+/*5th page*/
+.services {
+    width: 100%;
+    background-color: rgb(243, 241, 235);
+    padding: 50px 0px
+}
+
+.service a {
+    text-align: center;
+}
+
+.services .heading {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+
+.services .heading h1,
+.heading p {
+    font-weight: 600;
+}
+
+.service-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.service-block .service-card {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+.service-block .service-card .service-logo {
+    min-width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0px 10px
+}
+
+.service-block .service-card h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0px
+}
+
+.services .link {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px
+}
+
+.services .link a {
+    padding: 5px 10px;
+    color: rgb(0, 119, 255);
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+
+/*6th page* message section*/
+.message{width:100%;padding:30px 0px}
+.message .heading{width: 100%; text-align: center;padding: 100px 0px;font-family: "DM Serif Display", sans-serif;}
+.message .message-content{width:100%;display: flex;justify-content: space-around;flex-wrap: wrap;}
+.principal-img{width:40%;}
+.message-content .msg{width:60%;min-width:600px;text-align: justify}
+
+
+/*7th page testimonial*/
+.testimonial{width:100%;height:100vh;background-color: rgb(183, 212, 247);}
+.testimonial .heading{text-align: center;margin:25px 0px}
+.testimonial .testimonial-block{width:100%;height:300px;background-color: antiquewhite;}
