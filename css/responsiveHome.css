@@ -4,5 +4,63 @@
     .welcomePage h1{font-size: 22px;}
     .welcomePage .welcomeImg img{width:100%;}
     
-    .facilities .cards{width:100%}
+    .facilities .cards{width:100%;margin:10px }
+
+
+    
+    .programs .program-items {width: 100%;height:fit-content;}
+    .program-items .card{margin:10px 0px;height:fit-content}
+    .programs .program-items img{width:90%;height:auto}
+
+
+    /*message*/
+    .message-content{display:flex;justify-content: center;}
+    .message h1{font-size: 33px;}
+    .message-content .principal-img{width:100%;display:flex;justify-content: center;}
+    .message-content .principal-img img{background-color: rgb(182, 138, 138);width:50%}
+    .message-content .msg{}
+
+
+    /*our service*/
+    .service-block{width:100%;flex-direction: column;justify-content: center;align-items: center;}
+    .service-card{width:100%}
+    .service-block .service-card {
+      width: 90%;}
+     
+     
+     
+      /*blogs*/
+
+     
+      .blog-block{width:100%;}
+      .blog-item{width:100vw}
+
+      .blogs .blog-items {
+   
+        border-radius: 12px;
+        width: 30%;
+        min-width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*aboutUs*/
+    .welcome .info-img{flex-direction:column;justify-content: center;align-items: center;}
+
+    .why-vbes{justify-content: center;align-items: center;}
+    .why-vbes .intro{width:100%}
+    .why-vbes .others{flex-direction: column-reverse;align-items: center;}
+    .why-vbes .img, .why-vbes .text{width: 100%;}
+
+
+    .mission-content{flex-direction: column-reverse;}
+    .mission-content .text{width:100%}
+
+    .vision-content{flex-direction: column;}
+
+    .team-members{justify-content: center;}
+     .member{height:100%;width:auto}
+    
+     
   }

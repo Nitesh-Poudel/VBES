@@ -1,0 +1,117 @@
+
+.nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    margin:0px;
+    padding:0px
+}
+
+
+nav.top {
+    width: 100vw;
+    height: 40px;
+    background-color: #38597b;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", Sans-serif;
+    font-size: 12px
+}
+
+nav.top a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+
+nav.top .info {
+    margin-left: 50px;
+    display: flex
+}
+
+.info {
+    display: block;
+    margin: 5px 10px;
+}
+
+
+
+.pageLinks {
+    height: 60px;
+    width: 100%;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: ;
+    background-color: white;
+    top: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.pageLinks,
+.links ul {
+    display: flex;
+    align-items: center;
+}
+
+.links ul a {
+    text-decoration: none;
+    padding: 22px 10px;
+    color: #38597b
+}
+
+.links ul a:hover {
+    background-color: #38597b;
+    color: white
+}
+
+.section-title {
+    font-family: "DM Serif Display", serif;
+}
+
+
+.schoolLogo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.schoolLogo img {
+    width: 150px
+}
+
+#selected {
+    background-color: #38597b;
+    color: white
+}
+
+
+.pageLink ul li a:hover {
+    background-color: rgb(42, 42, 81);
+}
+
+  /* CSS for Dropdown Menu */
+  .dropdown {
+    position: relative;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

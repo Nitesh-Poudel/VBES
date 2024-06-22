@@ -6,16 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/nav.css">   
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 
     <link rel="stylesheet" href="../css/responsiveHome.css">
+    <script src="../js/imgSlider.js"></script>
 
     <style>
         /* nav.top{width:100vw;height:20px;background-color:blue} */
     </style>
 </head>
 <body>
+    
+    
     <div class="container">
         <div class="nav">
             <nav class="top">
@@ -32,13 +37,20 @@
                 <div class="schoolLogo">
                     <img src="../asset/logo.png" alt="logo">
                 </div>
-                <div class="links">
+                <div class="links" id="navbar">
                     <ul type="none">
                         <li ><a id="selected" href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#academic">Academic</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#academic">Academic</a>
+                            <div class="dropdown-content">
+                                <a href="#">Pre primary</a>
+                                <a href="#">Primary</a>
+                                <a href="#">secondary</a>
+                            </div>
+                        </li>
                         <li><a href="#facilities">Facilities</a></li>
-                        <li><a href="#events">Events</a></li>
+                        <li><a href="events.html">Events</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#notice">Notice</a></li>
                         <li><a href="#blogs">Blogs</a></li>
@@ -49,6 +61,7 @@
             </nav>
         </div>
 
+        <div class="inner-container"></div>
         <div class="content">
             <div class="bannerImg">
                 <div class="img"><img src="../asset/banner1.jpg" alt=""></div>
@@ -241,7 +254,7 @@
         <div class="testimonial">
             <div class="heading">
                 <p><i class="fa-solid fa-house"></i>Testimonial</p>
-                <h1 style="color:rgb(0, 149, 255);font-family: DM Serif Display, sans-serif;">What Students Say</h1>
+                <h3 style="color:rgb(0, 149, 255);font-family: DM Serif Display, sans-serif;">What Students Say</h3>
             </div>
             <div class="testimonial-block">
                 <div class="card">
@@ -322,15 +335,127 @@
         <!--blogs-->
         <div class="blogs">
             <div class="heading">
-                <h3>Recent Blogs</h3>
+                <h1 style="color: rgb(2, 82, 108); font-weight: 500;font-size: 30px;">Recent Blogs</h1>
             </div>
-            <div class="blogs-block">
-                <div class="blog-card">
-                    
+            <div class=" blog-block">
+                <div class=" blog-items">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../asset/blog2.png" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h2>First Day at Vidhya Bikash English School / +2 College</h2>
+                            <p> The first day at school or college is a momentous occasion filled with excitement, anticipation, and a touch of nervousness. It marks the beginning of a new chapter in one’s academic journey, offering the promise of new friendships, knowledge, and experiences.  </p>
+                        </div>
+                        <div class="blog-level">
+                            <!-- <div><p style="font-size: 12px;">PlayGroup to UKG</p></div> -->
+                            <div><a href="#">See more</a></div>
+                        </div>
+                    </div>
+    
                 </div>
+                <div class=" blog-items">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../asset/blog2.png" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h2>First Day at Vidhya Bikash English School / +2 College</h2>
+                            <p> The first day at school or college is a momentous occasion filled with excitement, anticipation, and a touch of nervousness. It marks the beginning of a new chapter in one’s academic journey, offering the promise of new friendships, knowledge, and experiences.  </p>
+                        </div>
+                        <div class="blog-level">
+                            <!-- <div><p style="font-size: 12px;">PlayGroup to UKG</p></div> -->
+                            <div><a href="#">See more</a></div>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class=" blog-items">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../asset/blog2.png" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h2>First Day at Vidhya Bikash English School / +2 College</h2>
+                            <p> The first day at school or college is a momentous occasion filled with excitement, anticipation, and a touch of nervousness. It marks the beginning of a new chapter in one’s academic journey, offering the promise of new friendships, knowledge, and experiences.  </p>
+                        </div>
+                        <div class="blog-level">
+                            <!-- <div><p style="font-size: 12px;">PlayGroup to UKG</p></div> -->
+                            <div><a href="#">See more</a></div>
+                        </div>
+                    </div>
+    
+                </div>
+
+
+                
+                
             </div>
+          
         </div>
+
+
+        
     </div>
     
-</body>
+
+<!--footer-->>
+    <div class="footer">
+        <div class="top-foot">
+            <div>
+                <h1>Newsletter - Stay tune and get the latest update</h1>
+                <p>Far far away, behind the word mountains</p>
+            </div>
+            
+            <input type="text" class="email-input" placeholder="Enter e-mail address">
+        </div>
+      
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="../asset/logo.png" alt="Vidhya Bikash English School">
+                        <p>Vidhya Bikash English School, a spacious and well-managed school in kageshwori area since 2061.</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="quick-links">
+                        <h3 id="topic">Quick Links</h3>
+                        <ul type="none">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Academic</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="questions">
+                        <h3 id="topic">Have a Questions?</h3>
+                        <ul type="none">
+                            <li><i class="fas fa-map-marker-alt"></i> Kageshwori Manohara-8,kathmandu</li>
+                            <li><i class="fas fa-phone-alt"></i> 01-4993112 / 9851062465</li>
+                            <li><i class="fas fa-envelope"></i> vbess2061@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       
+        <footer>
+            <p>Copyright © 2023 Your Trekking & Travel All Rights Reserved. Powered by Joogle Technology Pvt. Ltd</p>
+        </footer>
+    </div>
+
+    </body>
+   <script>
+        
+   </script>
 </html>
