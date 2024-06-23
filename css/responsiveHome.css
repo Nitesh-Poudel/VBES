@@ -1,4 +1,9 @@
 @media screen and (max-width: 900px) {
+
+  .sidebar img{display: block;}
+  .links{display:none;}
+
+
     /* CSS rules for screens 768px and above */
     .welcomePage .contents{width:100%;}
     .welcomePage h1{font-size: 22px;}
